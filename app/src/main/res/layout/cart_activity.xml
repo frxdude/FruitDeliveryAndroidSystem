@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D55a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Миний сагс"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/top_fruit_name"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp" />
+    <LinearLayout
+        android:id="@+id/user_cart_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сагс Цэвэрлэх"
+                android:id="@+id/clear"
+                android:layout_marginRight="30dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order"
+                android:text="Захиалга хийх"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

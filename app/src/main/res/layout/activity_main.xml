@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D55a"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="55dp"-->
+        <!--            android:background="@color/main"-->
+        <!--            android:fontFamily="monospace"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:paddingLeft="20dp"-->
+        <!--            android:text="Сайн уу fRx"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="20sp" />-->
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:text="Эрэлт их"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="30dp">
+
+            <LinearLayout
+                android:id="@+id/popularList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="monospace"
+            android:text="Долоо хоногын онцлох"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:id="@+id/top_fruit_pic"
+                android:background="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Жүрж"
+                    android:id="@+id/top_fruit_name"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Калори:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="233"
+                        android:id="@+id/top_fruit_calories"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:fontFamily="monospace"
+                        android:text="Үнэ:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:fontFamily="monospace"
+                        android:id="@+id/top_fruit_price_and_kg"
+                        android:text="4500/кг"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дэлгэрэнгүй"
+                    android:id="@+id/detailButton"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/ultra_rounded"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cart"
+                android:background="@drawable/cart"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
